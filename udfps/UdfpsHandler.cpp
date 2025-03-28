@@ -121,11 +121,10 @@ class LaurelSproutUdfpsHandler : public UdfpsHandler {
     void onAcquired(int32_t result, int32_t vendorCode) {
         if (static_cast<AcquiredInfo>(result) == AcquiredInfo::GOOD) {
             set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-        } else if (vendorCode == 21) {
+        } else if (vendorCode == 21 || vendorCode == 23) {
             /*
              * vendorCode = 21 waiting for finger
-             * vendorCode = 22 finger down
-             * vendorCode = 23 finger up
+             * vendorCode = 23 waiting for enroll
              */
             set(FOD_STATUS_PATH, FOD_STATUS_ON);
         }
