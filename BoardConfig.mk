@@ -13,7 +13,6 @@ DEVICE_PATH := device/xiaomi/laurel_sprout
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \
-    odm \
     system \
     vbmeta \
     vendor
