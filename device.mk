@@ -46,6 +46,9 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
+# Camera
+$(call soong_config_set,sm6125CameraVars,needs_sec_get_cam_pos,true)
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     libudfpshandler
