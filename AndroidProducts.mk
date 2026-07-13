@@ -5,4 +5,3 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aetheria_laurel_sprout.mk
