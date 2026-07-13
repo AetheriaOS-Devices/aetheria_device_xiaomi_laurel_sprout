@@ -23,3 +23,6 @@ PRODUCT_MODEL := Mi A3
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 BUILD_FINGERPRINT := Xiaomi/laurel_sprout/laurel_sprout:11/RKQ1.200903.002/V12.0.26.0.RFQMIXM:user/release-keys
+
+# AetheriaOS maintainer overlay
+$(call inherit-product, vendor/aetheria/build/target/product/aetheria/aetheria/aetheria_laurel_sprout.mk)
